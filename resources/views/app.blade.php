@@ -45,9 +45,10 @@
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="{{url('app')}}">Home</a></li>
             <li><a href="{{url('about')}}">About</a></li>
-            <li><a href="courses.html">Courses</a></li>
+            <li><a href="{{url('etudiant')}}">Etudiant</a></li>
+            <li><a href="{{url('liste')}}">Voir Etudint</a></li>
             <li><a href="trainers.html">Trainers</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="pricing.html">Pricing</a></li>

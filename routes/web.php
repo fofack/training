@@ -24,3 +24,14 @@ Route::get('/app', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/details', function () {
+    return view('ajout_etudiant');
+});
+
+Route::post('/save-etudiant', 'App\Http\Controllers\EtudiantController@store');
+
+Route::get('/liste', 'App\Http\Controllers\EtudiantController@index');
+
+Route::get('/details/{id}', 'App\Http\Controllers\EtudiantController@get');
+
